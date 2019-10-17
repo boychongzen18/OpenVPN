@@ -1,0 +1,24 @@
+
+
+Header 1
+
+http-proxy (server) 8080
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
+http-proxy-option CUSTOM-HEADER Host (bug)
+http-proxy-option CUSTOM-HEADER X-Online-Host (bug)
+http-proxy-option CUSTOM-HEADER X-Forward-Host (bug)
+http-proxy-option CUSTOM-HEADER Connection keep-alive
+http-proxy-option CUSTOM-HEADER Pr
+
+Header 2
+
+http-proxy (server) 8080
+http-proxy-option CUSTOM-HEADER PUT HTTP/1.1
+http-proxy-option CUSTOM-HEADER Host (bug)
+http-proxy-option CUSTOM-HEADER X-Online-Host (bug)
+http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
+http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
+
+
+
+Creator Boychongzen aka Xroot
