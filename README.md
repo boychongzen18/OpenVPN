@@ -10,7 +10,9 @@
 ![be](https://raw.githubusercontent.com/boychongzen18/OpenVPN/master/openVPN.jpg)
 ![be](https://raw.githubusercontent.com/boychongzen18/OpenVPN/master/speed.jpg)
 
-LINK APK OpenVPN : https://apkpure.com/id/openvpn-connect-–-fast-safe-ssl-vpn-client/net.openvpn.openvpn
+LINK APK OpenVPN For Windows : https://openvpn.net/community-downloads
+
+LINK APK OpenVPN For Andrid : https://apkpure.com/id/openvpn-connect-–-fast-safe-ssl-vpn-client/net.openvpn.openvpn
 
 LINK AKUN OpenVPN : https://www.tcpvpn.com
 
