@@ -1,0 +1,115 @@
+Creator Boychongzen aka Xroot
+=================================================================
+CONTOH CONFIG PERTAMA
+
+client
+dev tun
+proto tcp
+remote  IP 443 <--( Akun OpenVPN )
+resolv-retry infinite
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+mssfix 1450
+persist-key
+persist-tun
+auth-user-pass
+comp-lzo
+reneg-sec 0
+verb 3
+http-proxy IP 8080 <--( Akun OpenVPN )
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
+http-proxy-option CUSTOM-HEADER Host Bug-Host
+http-proxy-option CUSTOM-HEADER X-Online-Host Bug-Host
+http-proxy-option CUSTOM-HEADER X-Forward-Host Bug-Host
+http-proxy-option CUSTOM-HEADER Connection keep-alive
+http-proxy-option CUSTOM-HEADER Pr
+
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIE4jCCA8qgAwIBAgIJAIweMRGy82wbMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYD
+VQQGEwJpZDELMAkGA1UECBMCaWQxEzARBgNVBAcTCnRjcHZwbi5jb20xEzARBgNV
+BAoTCnRjcHZwbi5jb20xEzARBgNVBAsTCnRjcHZwbi5jb20xEzARBgNVBAMTCnRj
+cHZwbi5jb20xEzARBgNVBCkTCnRjcHZwbi5jb20xITAfBgkqhkiG9w0BCQEWEmNv
+bmF0Y3RAdGNwdnBuLmNvbTAeFw0xNTEwMjcyMDA0MzNaFw0yNTEwMjQyMDA0MzNa
+MIGmMQswCQYDVQQGEwJpZDELMAkGA1UECBMCaWQxEzARBgNVBAcTCnRjcHZwbi5j
+b20xEzARBgNVBAoTCnRjcHZwbi5jb20xEzARBgNVBAsTCnRjcHZwbi5jb20xEzAR
+BgNVBAMTCnRjcHZwbi5jb20xEzARBgNVBCkTCnRjcHZwbi5jb20xITAfBgkqhkiG
+9w0BCQEWEmNvbmF0Y3RAdGNwdnBuLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAMKtf93h/cOgMf4rAv3T1lamekIIC7ViEakjQ0Y0EDkQuxW7eyRn
+94pCiL/IrCkqbk61nnmjxLDY3LOSIw+75M/o6dbjHO2m4GnC5b5qecq5T7Bg5hCo
+vYBUyouOr9QbAH8AprwgH3cA6HnWB5Mw97vtYtH45ibl9ntSCKLg1qh4g3NcmzTN
+xEl31NRQwLtnkk7HKegKePZCnZmQYW+nfe0UPpKlm9gUWv11DeKh7mcZy470Bjbs
+iceufmAxjDd8zi+/j0kbMFeHhUdXd3FpyNQ51A/FcUHtRtAhkgUo1NA1IoabkxEF
+osD4gocc9aZnwNtxEz1VBFHHkQrmjMQkGicCAwEAAaOCAQ8wggELMB0GA1UdDgQW
+BBQ3U6YEwrtxBgx3xnfqa++4xUuD6zCB2wYDVR0jBIHTMIHQgBQ3U6YEwrtxBgx3
+xnfqa++4xUuD66GBrKSBqTCBpjELMAkGA1UEBhMCaWQxCzAJBgNVBAgTAmlkMRMw
+EQYDVQQHEwp0Y3B2cG4uY29tMRMwEQYDVQQKEwp0Y3B2cG4uY29tMRMwEQYDVQQL
+Ewp0Y3B2cG4uY29tMRMwEQYDVQQDEwp0Y3B2cG4uY29tMRMwEQYDVQQpEwp0Y3B2
+cG4uY29tMSEwHwYJKoZIhvcNAQkBFhJjb25hdGN0QHRjcHZwbi5jb22CCQCMHjER
+svNsGzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCVWupgVrrYyFXc
+D+tVeCnRiMes1buJ1pu1KbKCgBmpTUXUSVPknsHBe9pHqBXyTEmqCYfUY/wI5ASX
+5ZAw/5sehACvevkSSyklnPcE5HmEz+NkPKaDqJuEWKb9s7E5lgjl8PzyqhUqWz6a
+m9TQbYAVB8dtuFxYzcdhYVmmyog/cYKe8iGQFr492XUD8989CKj7Q+aaC8qKkFAK
+0VhUoFxYYENvbBL6EthZkE90lpPqH0pjsWxiJsh+ivyKSsb6zMYkLRNudBZqflEk
+MVszvfcc+GqInaAYwet/YACJHhvaGDyTACYBSPPINuL9oRDlWmtWfmH9tEnd+ETy
+0dm+EXRd
+-----END CERTIFICATE-----
+</ca>
+=================================================================
+CONTOH CONFIG KEDUA
+
+client
+dev tun
+proto tcp
+remote  IP 443 <--( Akun OpenVPN )
+resolv-retry infinite
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+mssfix 1450
+persist-key
+persist-tun
+auth-user-pass
+comp-lzo
+reneg-sec 0
+verb 3
+http-proxy IP 8080 <--( Akun OpenVPN )
+http-proxy-option CUSTOM-HEADER PUT HTTP/1.1
+http-proxy-option CUSTOM-HEADER Host (bug-host)
+http-proxy-option CUSTOM-HEADER X-Online-Host (bug-host)
+http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
+http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
+
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIE4jCCA8qgAwIBAgIJAIweMRGy82wbMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYD
+VQQGEwJpZDELMAkGA1UECBMCaWQxEzARBgNVBAcTCnRjcHZwbi5jb20xEzARBgNV
+BAoTCnRjcHZwbi5jb20xEzARBgNVBAsTCnRjcHZwbi5jb20xEzARBgNVBAMTCnRj
+cHZwbi5jb20xEzARBgNVBCkTCnRjcHZwbi5jb20xITAfBgkqhkiG9w0BCQEWEmNv
+bmF0Y3RAdGNwdnBuLmNvbTAeFw0xNTEwMjcyMDA0MzNaFw0yNTEwMjQyMDA0MzNa
+MIGmMQswCQYDVQQGEwJpZDELMAkGA1UECBMCaWQxEzARBgNVBAcTCnRjcHZwbi5j
+b20xEzARBgNVBAoTCnRjcHZwbi5jb20xEzARBgNVBAsTCnRjcHZwbi5jb20xEzAR
+BgNVBAMTCnRjcHZwbi5jb20xEzARBgNVBCkTCnRjcHZwbi5jb20xITAfBgkqhkiG
+9w0BCQEWEmNvbmF0Y3RAdGNwdnBuLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAMKtf93h/cOgMf4rAv3T1lamekIIC7ViEakjQ0Y0EDkQuxW7eyRn
+94pCiL/IrCkqbk61nnmjxLDY3LOSIw+75M/o6dbjHO2m4GnC5b5qecq5T7Bg5hCo
+vYBUyouOr9QbAH8AprwgH3cA6HnWB5Mw97vtYtH45ibl9ntSCKLg1qh4g3NcmzTN
+xEl31NRQwLtnkk7HKegKePZCnZmQYW+nfe0UPpKlm9gUWv11DeKh7mcZy470Bjbs
+iceufmAxjDd8zi+/j0kbMFeHhUdXd3FpyNQ51A/FcUHtRtAhkgUo1NA1IoabkxEF
+osD4gocc9aZnwNtxEz1VBFHHkQrmjMQkGicCAwEAAaOCAQ8wggELMB0GA1UdDgQW
+BBQ3U6YEwrtxBgx3xnfqa++4xUuD6zCB2wYDVR0jBIHTMIHQgBQ3U6YEwrtxBgx3
+xnfqa++4xUuD66GBrKSBqTCBpjELMAkGA1UEBhMCaWQxCzAJBgNVBAgTAmlkMRMw
+EQYDVQQHEwp0Y3B2cG4uY29tMRMwEQYDVQQKEwp0Y3B2cG4uY29tMRMwEQYDVQQL
+Ewp0Y3B2cG4uY29tMRMwEQYDVQQDEwp0Y3B2cG4uY29tMRMwEQYDVQQpEwp0Y3B2
+cG4uY29tMSEwHwYJKoZIhvcNAQkBFhJjb25hdGN0QHRjcHZwbi5jb22CCQCMHjER
+svNsGzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCVWupgVrrYyFXc
+D+tVeCnRiMes1buJ1pu1KbKCgBmpTUXUSVPknsHBe9pHqBXyTEmqCYfUY/wI5ASX
+5ZAw/5sehACvevkSSyklnPcE5HmEz+NkPKaDqJuEWKb9s7E5lgjl8PzyqhUqWz6a
+m9TQbYAVB8dtuFxYzcdhYVmmyog/cYKe8iGQFr492XUD8989CKj7Q+aaC8qKkFAK
+0VhUoFxYYENvbBL6EthZkE90lpPqH0pjsWxiJsh+ivyKSsb6zMYkLRNudBZqflEk
+MVszvfcc+GqInaAYwet/YACJHhvaGDyTACYBSPPINuL9oRDlWmtWfmH9tEnd+ETy
+0dm+EXRd
+-----END CERTIFICATE-----
+</ca>
+
