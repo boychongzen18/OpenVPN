@@ -18,7 +18,7 @@ LINK AKUN OpenVPN : https://www.tcpvpn.com
 
 My Youtube    : https://www.youtube.com/channel/UCKdOPQ_iIXcqK17PB_2RMdQ
 
-Link Tutorial : 
+Link Tutorial Android : https://youtu.be/3JSl2BIoAuo
 
 My Website    : https://hackingforlive.wordpress.com
 
